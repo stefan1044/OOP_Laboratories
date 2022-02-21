@@ -8,20 +8,6 @@ using namespace std;
 
 int main()
 {
-	////Exemplificare printf
-	//printf("-----------------[EXEMPLU CU PRINTF]------------------------\n");
-	//int a = 123;
-	//printf("Valoare lui a este: %d\n", a);
-	//char c = 123;
-	//printf("Valoarea lui c (char) este: %c\n", c);
-	//printf("Valoarea numerica a lui c este: %d\n", c);
-	//char sir[20] = "ana are mere\0";
-	//printf("Sirul meu are valoarea: %s\n", sir);
-	//printf("-----------------------------------------------------");
-	//printf("\n\n");
-
-
-	printf("-----------------[EXEMPLU PROBLEMA 1]------------------------\n");
 	FILE* fp;
 	if (fopen_s(&fp, "in.txt", "r") != 0)
 	{
@@ -30,12 +16,6 @@ int main()
 	else {
 		printf("Am deschis fisierul cu success!\n");
 		char myString[200];
-		/*
-		if (fgets(myString, 200, fp))
-		{
-			printf("Am citit din fisier: %s\n", myString);
-		}
-		*/
 		int total = 0;
 		while (fgets(myString, 200, fp)) {
 			int numar = 0;
@@ -53,7 +33,6 @@ int main()
 		}
 		printf("%d \n", total);
 	}
-	printf("-----------------------------------------------------");
-	printf("\n\n");
+	printf("\n");
 	return 0;
 }
